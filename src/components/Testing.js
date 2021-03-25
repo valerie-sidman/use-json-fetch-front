@@ -2,7 +2,7 @@ import React from 'react';
 import useJsonFetch from '../hooks/useJsonFetch';
 
 export default function Testing(props) {
-  const [data, isLoading, hasError] = useJsonFetch(props.url);
+  const [data, isLoading, hasError] = useJsonFetch(props.url, opts);
   console.log(isLoading);
   return (
     <div>
